@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { copyTextToClipboard } from '../utils/copyClipboard';
 
 import './Card.css';
-import Image from '../assets/image.svg';
 
 export default function Card() {
 
@@ -110,7 +109,7 @@ export default function Card() {
 								<div className="content">
 									<div onDragOver={e => e.preventDefault()} onDrop={handleDrop} className="py-4 px-3 img-content">
 										<div className="mt-2 row justify-content-center align-items-center">
-											<img src={Image} alt="drag-and-drop" className="w-50" />
+											<img src={'https://raw.githubusercontent.com/gastonpedraza08/image-uploader/master/src/assets/image.svg'} alt="drag-and-drop" className="w-50" />
 											<p className="text-center mt-4 mb-2">Drag &#38; Drop your image here</p>
 										</div>
 									</div>

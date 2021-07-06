@@ -20,7 +20,7 @@ export default function Card() {
 		const reader = new FileReader();
 
 		reader.onloadend = function() {
-			const url = '/api/upload';
+			const url = 'https://sleepwalk08-image-uploader.herokuapp.com/api/upload';
 			const data = {
 				base64: reader.result,
 				extension: 'jpeg'
